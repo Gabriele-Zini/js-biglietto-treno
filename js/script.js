@@ -8,7 +8,7 @@ console.log(userKm, typeof userKm);
 const userAge = parseInt(prompt("Hello User, how old are you?"));
 console.log(userAge, typeof userAge);
 
-// ticket price
+// ticket price in €
 let ticketPrice = 0.21*userKm;
 
 // message var
