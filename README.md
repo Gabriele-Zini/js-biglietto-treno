@@ -46,7 +46,7 @@ let conditionFulFilled = false;
 
 **Program logic**
 
-1. set conditions and message in case of user input error for age and kilometers with the function: conditionBoth();
+1. set conditions and message in case of user input error for negative age value, age value > 123 and negative kilometers value with the function: conditionBoth();
 
 ```javascript
 // age and km condition
@@ -62,7 +62,7 @@ function conditionBoth() {
 }
 ```
 
-2. set conditions and message in case of user input error only for kilometers with the function: conditionKm.
+2. set conditions and message in case of user input error only for negative kilometers value with the function: conditionKm().
 
 ```javascript
 // km condition
@@ -75,7 +75,7 @@ function conditionKm() {
 }
 ```
 
-3. set conditions and message in case of user input error only for age with the function: conditionAge.
+3. set conditions and message in case of user input error only for negative age value with the function: conditionAge().
 
 ```javascript
 // age condition
@@ -93,7 +93,7 @@ function conditionAge() {
 }
 ```
 
-4. calculate the total price of the trip taking into account the kilometers and the user's age with the function: conditionPrice.
+4. calculate the total price of the trip taking into account the kilometers and the user's age with the function: conditionPrice().
 
 ```javascript
 // price conditions
