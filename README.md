@@ -46,7 +46,7 @@ let conditionFulFilled = false;
 
 **Program logic**
 
-1. set conditions and message in case of user input error for negative age value, age value > 123 and negative kilometers value with the function: conditionBothUncorrect();
+1. set conditions and message in case of user input error for negative age value or age value > 123 and negative kilometers value with the function: conditionBothUncorrect();
 
 ```javascript
 // age and km condition
@@ -75,7 +75,7 @@ function conditionKm() {
 }
 ```
 
-3. set conditions and message in case of user input error only for negative age value with the function: conditionAge().
+3. set conditions and message in case of user input error only for negative age value or age value > 123 with the function: conditionAge().
 
 ```javascript
 // age condition
