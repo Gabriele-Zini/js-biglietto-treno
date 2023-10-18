@@ -19,7 +19,7 @@ The final price output should be in human-readable form (with a maximum of two d
 3.  the ticket price is defined based on the distance traveled (0.21 € per km).
     - a 20% discount is applied for minors.
     - a 40% discount is applied for passengers over 65.
-4.  set a message variable and a condition flag (to control the program flow) without initialization.
+4.  set a message variable without initialization and a condition flag (to control the program flow).
 
 ```javascript
 // km that user wants to travel
