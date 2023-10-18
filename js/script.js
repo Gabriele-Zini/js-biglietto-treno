@@ -23,7 +23,7 @@ let conditionFulFilled = false;
 // PROGRAM LOGIC
 
 // age and km condition
-function conditionBoth() {
+function conditionBothUncorrect() {
   if (userAge < 0 && userKm <= 0) {
     message = "<h1>Age is uncorrect and Kilometers cannot be negative";
     conditionFulFilled = true;
@@ -84,7 +84,7 @@ function conditionPrice() {
 
 // display output
 if (conditionFulFilled === false) {
-  conditionBoth();
+  conditionBothUncorrect();
 }
 if (conditionFulFilled === false) {
   conditionKm();
