@@ -8,3 +8,11 @@
 /* COMMON */
 
 /* Utilities */
+
+.m-5 {
+    margin: 3rem;
+}
+
+.red-text {
+    color: red;
+}
