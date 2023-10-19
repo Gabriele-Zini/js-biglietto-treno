@@ -10,8 +10,6 @@ console.log(userKm, typeof userKm);
 const userAge = parseInt(prompt("Hello User, how old are you?"));
 console.log(userAge, typeof userAge);
 
-
-
 // message var
 let message;
 
@@ -20,9 +18,6 @@ let conditionFulFilled = false;
 
 
 // PROGRAM LOGIC
-
-// ticket price in €
-let ticketPrice = 0.21 * userKm;
 
 // age and km condition
 function conditionBothUncorrect() {
@@ -58,6 +53,9 @@ function conditionAge() {
     conditionFulFilled = true;
   }
 }
+
+// ticket price in €
+let ticketPrice = 0.21 * userKm;
 
 // price conditions
 function conditionPrice() {

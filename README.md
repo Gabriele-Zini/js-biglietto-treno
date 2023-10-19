@@ -40,17 +40,7 @@ let conditionFulFilled = false;
 
 **Program logic**
 
-1.  the ticket price is defined based on the distance traveled (0.21 € per km).
-
-    - a 20% discount is applied for minors.
-    - a 40% discount is applied for passengers over 65
-
-    ```javascript
-    // ticket price in €
-    let ticketPrice = 0.21 * userKm;
-    ```
-    <br>
-2.  set conditions and message in case of user input error for negative age value or age value > 123 and negative kilometers value with the function: conditionBothUncorrect():
+1.  set conditions and message in case of user input error for negative age value or age value > 123 and negative kilometers value with the function: conditionBothUncorrect():
 
 ```javascript
 // age and km condition
@@ -68,7 +58,7 @@ function conditionBothUncorrect() {
 
    <br>
 
-3. set conditions and message in case of user input error only for negative kilometers value with the function: conditionKm():
+2. set conditions and message in case of user input error only for negative kilometers value with the function: conditionKm():
 
 ```javascript
 // km condition
@@ -83,7 +73,7 @@ function conditionKm() {
 
    <br>
 
-4. set conditions and message in case of user input error only for negative age value or age value > 123 with the function: conditionAge():
+3. set conditions and message in case of user input error only for negative age value or age value > 123 with the function: conditionAge():
 
 ```javascript
 // age condition
@@ -103,7 +93,19 @@ function conditionAge() {
 
    <br>
 
-5. calculate the total price of the trip taking into account the kilometers and the user's age discount:
+4.  the ticket price is defined based on the distance traveled (0.21 € per km).
+
+    - a 20% discount is applied for minors.
+    - a 40% discount is applied for passengers over 65
+
+    ```javascript
+    // ticket price in €
+    let ticketPrice = 0.21 * userKm;
+    ```
+
+    <br>
+
+5.  calculate the total price of the trip taking into account the kilometers and the user's age discount:
 
 - a 20% discount is applied for minors
 - a 40% discount is applied for passengers over 65.
