@@ -97,13 +97,14 @@ function conditionAge() {
 
     - a 20% discount is applied for minors.
     - a 40% discount is applied for passengers over 65
+  
 
-    ```javascript
+  ```javascript
     // ticket price in €
     let ticketPrice = 0.21 * userKm;
-    ```
+  ```
 
-    <br>
+  <br>
 
 5.  calculate the total price of the trip taking into account the kilometers and the user's age discount:
 
