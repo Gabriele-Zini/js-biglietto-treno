@@ -16,10 +16,7 @@ The final price output should be in human-readable form (with a maximum of two d
 
 1.  ask the user for the number of kilometers they want to travel and convert the string in number with parseInt().
 2.  ask the user for the passenger's age and convert the string in number with parseInt().
-3.  the ticket price is defined based on the distance traveled (0.21 € per km).
-    - a 20% discount is applied for minors.
-    - a 40% discount is applied for passengers over 65.
-4.  set a message variable without initialization and a condition flag (to control the program flow):
+3.  set a message variable without initialization and a condition flag (to control the program flow):
 
 ```javascript
 // km that user wants to travel
@@ -32,9 +29,6 @@ console.log(userKm, typeof userKm);
 const userAge = parseInt(prompt("Hello User, how old are you?"));
 console.log(userAge, typeof userAge);
 
-// ticket price in €
-let ticketPrice = 0.21 * userKm;
-
 // message var
 let message;
 
@@ -46,7 +40,17 @@ let conditionFulFilled = false;
 
 **Program logic**
 
-1. set conditions and message in case of user input error for negative age value or age value > 123 and negative kilometers value with the function: conditionBothUncorrect():
+1.  the ticket price is defined based on the distance traveled (0.21 € per km).
+
+    - a 20% discount is applied for minors.
+    - a 40% discount is applied for passengers over 65
+
+    ```javascript
+    // ticket price in €
+    let ticketPrice = 0.21 * userKm;
+    ```
+    <br>
+2.  set conditions and message in case of user input error for negative age value or age value > 123 and negative kilometers value with the function: conditionBothUncorrect():
 
 ```javascript
 // age and km condition
@@ -64,7 +68,7 @@ function conditionBothUncorrect() {
 
    <br>
 
-2. set conditions and message in case of user input error only for negative kilometers value with the function: conditionKm():
+3. set conditions and message in case of user input error only for negative kilometers value with the function: conditionKm():
 
 ```javascript
 // km condition
@@ -79,7 +83,7 @@ function conditionKm() {
 
    <br>
 
-3. set conditions and message in case of user input error only for negative age value or age value > 123 with the function: conditionAge():
+4. set conditions and message in case of user input error only for negative age value or age value > 123 with the function: conditionAge():
 
 ```javascript
 // age condition
@@ -99,11 +103,12 @@ function conditionAge() {
 
    <br>
 
-4. calculate the total price of the trip taking into account the kilometers and the user's age discount:
+5. calculate the total price of the trip taking into account the kilometers and the user's age discount:
+
 - a 20% discount is applied for minors
 - a 40% discount is applied for passengers over 65.
 
- with the function: conditionPrice():
+with the function: conditionPrice():
 
 ```javascript
 // price conditions
@@ -131,7 +136,7 @@ function conditionPrice() {
 
    <br>
 
-5. every condition has the conditionFulfilled = true to prevent the subsequent conditions from being checked or executed. Functions order is crucial.
+6. every condition has the conditionFulfilled = true to prevent the subsequent conditions from being checked or executed. Functions order is crucial.
    <br>
 
 **Output**
